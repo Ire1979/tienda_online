@@ -1,0 +1,52 @@
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/available
+
+###
+GET http://localhost:3000/api/products/deportes
+
+###
+GET http://localhost:3000/api/products/min/18
+
+###
+GET http://localhost:3000/api/products/min/15/max/50
+
+###
+GET http://localhost:3000/api/products/stock/5
+
+###
+GET http://localhost:3000/api/products/6384c19bdc2331d5fba31060
+
+###
+GET http://localhost:3000/api/clients
+
+###
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+{
+    "name": "Irene",
+    "email": "irene@gmail.com",
+    "address": "Alcalá, 13",
+    "age": 28,
+    "active": true
+}
+
+###
+PUT http://localhost:3000/api/clients/6385eebd79b2b413fccd0815
+Content-Type: application/json
+
+{
+    "age": 35,
+    "active": false
+}
+
+###
+DELETE http://localhost:3000/api/clients/6385eebd79b2b413fccd0815
+
+###
+GET http://localhost:3000/api/clients/6385f407302f4f96f9426981/product/6384acb0dc2331d5fba3105b
+
+###
+GET https://0e01-83-36-192-103.eu.ngrok.io/api/clients
